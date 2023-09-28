@@ -70,7 +70,7 @@ const Menu: FC<MenuProps> = ({
                         )}
                         <div className="flex flex-col items-start w-full space-y-2">
                             {session?.user && prompts?.map((prompt) => (
-                                <div className='flex items-center justify-start w-full'>
+                                <div key={prompt?.id} className='flex items-center justify-start w-full'>
                                     <Button variant='flat' className='w-full flex items-center justify-start !text-start' onClick={() => router.push(`/prompt/${prompt?.id}`)} >
                                         <span className='truncate text-start line-clamp-1'>
                                             {prompt?.title.length > 28 ? prompt?.title.slice(0, 28) + '...' : prompt?.title}

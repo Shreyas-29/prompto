@@ -40,7 +40,7 @@ const SignUp = () => {
             </CardHeader>
             <CardBody className='space-y-4'>
                 <p className='text-xs text-center text-gray-700 md:text-sm'>
-                    By creating an account, you agree to Prompto's Terms and Conditions.
+                    By creating an account, you agree to Prompto&apos;s Terms and Conditions.
                 </p>
                 <Button
                     color='primary'

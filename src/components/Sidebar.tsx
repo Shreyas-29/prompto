@@ -24,8 +24,6 @@ const Sidebar: FC<SidebarProps> = ({
     prompts
 }) => {
 
-    // const prompts = [];
-
     const router = useRouter();
 
     const { isOpen, onOpen, onOpenChange } = useDisclosure();
@@ -64,8 +62,8 @@ const Sidebar: FC<SidebarProps> = ({
                                 You have no prompts yet.
                             </span>
                         )}
-                        {prompts?.map((prompt) => (
-                            <div className='flex items-center flex-1 w-full'>
+                        {prompts?.map((prompt: ExtendedPrompt) => (
+                            <div key={prompt?.id} className='flex items-center flex-1 w-full'>
                                 <Button variant='flat' className='w-full flex items-center justify-start !text-start' onClick={() => router.push(`/prompt/${prompt?.id}`)} >
                                     <span className='truncate text-start line-clamp-1'>
                                         {prompt?.title.length > 28 ? prompt?.title.slice(0, 28) + '...' : prompt?.title}

@@ -41,7 +41,7 @@ const SignIn = () => {
             </CardHeader>
             <CardBody className='space-y-4'>
                 <p className='text-xs text-center text-gray-700 md:text-sm'>
-                    By signing in, you agree to Prompto's Terms and Conditions of Use & Sale.
+                    By signing in, you agree to Prompto&apos;s Terms and Conditions of Use & Sale.
                 </p>
                 <Button
                     color='primary'
@@ -65,7 +65,7 @@ const SignIn = () => {
             </CardBody>
             <CardFooter className='flex items-center justify-center w-full -mt-2 text-center'>
                 <p className='w-full text-sm text-center text-gray-700'>
-                    Don't have an account? <Link href="/signup" className='font-medium text-blue-500'>Sign Up</Link>
+                    Don&apos;t have an account? <Link href="/signup" className='font-medium text-blue-500'>Sign Up</Link>
                 </p>
             </CardFooter>
         </Card>
