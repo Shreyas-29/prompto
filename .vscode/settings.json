@@ -1,0 +1,13 @@
+{
+  "scm.diffDecorationsGutterAction": "none",
+  "scm.diffDecorationsGutterPattern": {
+    "modified": false
+  },
+  "scm.diffDecorationsGutterVisibility": "hover",
+  "scm.diffDecorationsGutterWidth": 1,
+  "testing.gutterEnabled": false,
+  "scm.diffDecorationsIgnoreTrimWhitespace": "true",
+  "notebook.cellFocusIndicator": "border",
+  "WillLuke.nextjs.addTypesOnSave": true,
+  "WillLuke.nextjs.hasPrompted": true
+}
