@@ -46,7 +46,7 @@ const PromptCard: FC<PromptCardProps> = ({
                     </div>
                     <div className="flex items-center justify-end">
                         <span className="text-xs text-gray-500 text-end">
-                            #{prompt?.category}
+                            #{prompt?.category.slice(0, 10)}
                         </span>
                     </div>
                 </div>

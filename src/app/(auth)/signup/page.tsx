@@ -1,6 +1,12 @@
 import { SignUp } from '@/components';
+import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+    title: "Prompto - Sign Up",
+    description: "Explore the world of AI-powered prompts."
+}
 
 export default function SignUpPage() {
     return (

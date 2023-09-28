@@ -1,19 +1,13 @@
-import { createPrompt, deletePrompt, getPrompts, getSearch, getUserPrompts } from '@/actions';
-import { Feed, Header, Loader, Sidebar } from '@/components';
+import { createPrompt, getUserPrompts } from '@/actions';
+import { Feed, Header, Sidebar } from '@/components';
 import { getAuthSession } from '@/lib/auth';
-import { ExtendedPrompt } from '@/types/prompt';
 import Image from 'next/image';
-import React from 'react';
 
 export default async function HomePage() {
 
     const session = await getAuthSession();
 
-    const prompts: ExtendedPrompt[] | null = await getPrompts();
-
     const userPrompts = await getUserPrompts(session?.user.id);
-
-    // const results = await getSearch("");
 
     return (
         <div className='relative flex-1 w-full h-full min-h-screen'>

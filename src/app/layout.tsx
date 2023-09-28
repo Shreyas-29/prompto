@@ -7,7 +7,7 @@ import { Inter, DM_Sans, Poppins } from 'next/font/google';
 const fontBase = DM_Sans({ weight: ['400', '500', '600', '700'], subsets: ['latin'] });
 
 export const metadata: Metadata = {
-    title: 'Prompto',
+    title: 'Prompto - Explore the World of AI-Powered Prompts',
     description: 'Your AI Prompt Playground',
 }
 

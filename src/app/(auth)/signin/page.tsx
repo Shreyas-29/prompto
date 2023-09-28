@@ -1,7 +1,13 @@
 import { SignIn } from '@/components';
+import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+
+export const metadata: Metadata = {
+    title: "Prompto - Sign In",
+    description: "Explore the world of AI-powered prompts."
+}
 
 export default function SignInPage() {
     return (

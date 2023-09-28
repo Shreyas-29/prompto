@@ -98,6 +98,7 @@ const CreatePromptModal: FC<CreatePromptModalProps> = ({
                                     isRequired
                                     className='w-full'
                                     disabled={isLoading}
+                                    maxLength={15}
                                 />
                                 <Textarea
                                     variant='flat'
